@@ -1,5 +1,3 @@
-# Basic Gulp setup
-
 > This a little project to show rectangle overlap area
 
 Showing rectangle overlap area
