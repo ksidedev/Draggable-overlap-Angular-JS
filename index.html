@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Overlap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="apple-touch-icon-precomposed" sizes="192x192" href="images/icon.png" />
+  <link rel="icon" sizes="192x192" href="images/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+    <div ng-app="overlap" ng-controller="overlapCtrl">
+        <div id="container">
+            <p class="sub">Result</p>
+            <hr>
+
+            <p ng-model="name" class="sub content">
+              <!-- <span>Overlap width: </span>{{width}}<br>
+              <span>Overlap height: </span>{{height}}<br> -->
+              <span>Overlap area (W x h): </span>{{area}}
+            </p>
+            <div class="shape" ng-draggable='dragOptions'>
+                <p>Rectangle 1</p>
+            </div>
+             <div class="shape" ng-draggable='dragOptions'>
+                 <div class="overlap-area">
+                     <span class="overlap-unit"></span>
+                 </div>
+                 <p>Rectangle 2</p>
+             </div>
+        </div>
+    </div>
+
+      <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="https://code.angularjs.org/1.2.9/angular.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+      <script src="dist/js/app.js"></script>
+      <script src="dist/js/controller.js"></script>
+      <script src="dist/js/draggable.js"></script>
+      <script src="dist/js/events.js"></script>
+</body>
+</html>
