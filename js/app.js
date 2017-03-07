@@ -1,10 +1,10 @@
 angular.module('test', [])
 
-.directive('ngDraggable', function($document) {
+.directive('ngMovable', function($document) {
     return {
         restrict: 'A',
         scope: {
-            dragOptions: '=ngDraggable'
+            moveOptions: '=ngMovable'
         },
         link: function(scope, elem, attr) {
             var startX, startY, x = 0, y = 0,
@@ -14,11 +14,11 @@ angular.module('test', [])
             height = elem[0].offsetHeight;
 
             // Obtain drag options
-            if (scope.dragOptions) {
-                start  = scope.dragOptions.start;
-                drag   = scope.dragOptions.drag;
-                stop   = scope.dragOptions.stop;
-                var id = scope.dragOptions.container;
+            if (scope.moveOptions) {
+                start  = scope.moveOptions.start;
+                drag   = scope.moveOptions.drag;
+                stop   = scope.moveOptions.stop;
+                var id = scope.moveOptions.container;
                 if (id) {
                     container = document.getElementById(id).getBoundingClientRect();
                 }

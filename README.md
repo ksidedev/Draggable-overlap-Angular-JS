@@ -1,4 +1,6 @@
-> This a little project to show rectangle overlap area
+Draggable rectangle with Angular
+
+> This is a little project to show rectangle overlap area
 
 Showing rectangle overlap area
 ## Install

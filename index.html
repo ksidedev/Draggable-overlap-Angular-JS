@@ -16,14 +16,12 @@
             <hr>
 
             <p ng-model="name" class="sub content">
-              <!-- <span>Overlap width: </span>{{width}}<br>
-              <span>Overlap height: </span>{{height}}<br> -->
-              <span>Overlap area (W x h): </span>{{area}}
+              <span>Overlap area (W x h): </span>{{area}}<span>px</span>
             </p>
-            <div class="shape" ng-draggable='dragOptions'>
+            <div class="shape" ng-movable='dragOptions'>
                 <p>Rectangle 1</p>
             </div>
-             <div class="shape" ng-draggable='dragOptions'>
+             <div class="shape" ng-movable='dragOptions'>
                  <div class="overlap-area">
                      <span class="overlap-unit"></span>
                  </div>
@@ -38,6 +36,5 @@
       <script src="dist/js/app.js"></script>
       <script src="dist/js/controller.js"></script>
       <script src="dist/js/draggable.js"></script>
-      <script src="dist/js/events.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /**
- * Ksidedev - Gulp setup {{type}}
+ * Ksidedev - Overlap draggable rectangle {{type}}
  * Version {{version}}
  *
  * (c) 2016 Ksidedev
