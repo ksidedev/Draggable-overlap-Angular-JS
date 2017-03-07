@@ -17,4 +17,4 @@ Run `gulp` to start server and watch
 
 Run `gulp build:dist` to build distribution files
 
-Demo [here](draggable.ksidedev.com")
+Demo [here](http://draggable.ksidedev.com)
